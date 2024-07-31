@@ -6,6 +6,9 @@ function App() {
 
     return (
         <HomeDetails>
+            <head>
+                <title>Polaroid</title>
+            </head>
             <div className="overlay" />
             <div className="content">
                 <h1>Welcome to Polaroid ⭐</h1>
