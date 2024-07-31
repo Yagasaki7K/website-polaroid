@@ -2,14 +2,14 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 function App() {
-    const [url, setUrl] = useState<string>('https://github.com/yagasaki7k.png')
+    const [url, setUrl] = useState<string>('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7MUGXFujgtYiDQNy3bhTSxIUH3OfTa4JCp55Dri398-JBxlt-5Xyck1JghKuDC7a8Cmrr5NEk7bcRJGloPMQ8fws6O61Qlmso8Sok0yL5WcLfP1C21l6I6Xk1CeKkytHwYQoGZnnibaIXW3x8fUTpr-oerzIVAegKmnzE6qdB7udQQ4p3WmE9VvWuE1g/s1500/kikis-delivery-service-510353d0e522c.jpg')
 
     return (
         <HomeDetails>
             <div className="overlay" />
             <div className="content">
-                <h1>Welcome to Polaroid</h1>
-                <i>Insert an image URL, take screenshot and remove the background!</i>
+                <h1>Welcome to Polaroid ⭐</h1>
+                <i>Insert an image URL & take screenshot!</i>
                 <input type="text" onChange={e => setUrl(e.target.value)} placeholder='Insert an image URL' />
 
                 <img src={url} alt="Polaroid Style" />
@@ -55,11 +55,12 @@ const HomeDetails = styled.div`
             margin-top: 4rem;
             transform: rotate(6deg);
             border-top: 2rem solid var(--white);
-            border-bottom: 5rem solid var(--white);
+            border-bottom: 5.4rem solid var(--white);
             border-left: 1rem solid var(--white);
             border-right: 1rem solid var(--white);
             width: 505px;
             height: 590px;
+            object-fit: cover;
         }
     }
 `
